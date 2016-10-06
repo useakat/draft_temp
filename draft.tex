@@ -1,0 +1,147 @@
+\documentclass[a4paper,12pt]{article}
+%\usepackage{hyperref}
+%\usepackage{graphics}
+\usepackage{graphicx}
+%\usepackage[dvipdfmx]{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{supertabular}
+\usepackage{slashed}
+\usepackage{booktabs}
+\usepackage{cases}
+\usepackage{bigints}
+\usepackage{mysty}
+\usepackage[abs]{overpic}
+\usepackage{amsfonts}
+\usepackage{comment-k}
+%\usepackage[dvipdfmx]{color}
+\usepackage{color}
+%\usepackage{mediabb}
+\usepackage[large]{subfigure}
+%% \usepackage{lineno}
+
+%% page settings %%%
+% \setlength{\textwidth}{16.5cm}
+% \setlength{\textheight}{21.5cm}
+% \setlength{\oddsidemargin}{-.3 cm}
+% \setlength{\evensidemargin}{0cm}
+% \setlength{\topmargin}{0cm}
+% \setlength{\footskip}{1cm}
+ \setlength{\textwidth}{17cm}
+ \setlength{\textheight}{26cm}
+ \setlength{\topmargin}{0cm}
+ \setlength{\oddsidemargin}{2cm}
+ \setlength{\evensidemargin}{2cm}
+ \setlength{\footskip}{1cm}
+
+%\renewcommand{\topfraction}{1.0}
+%\renewcommand{\bottomfraction}{1.0}
+
+%%% global definitions %%%%
+\newcommand{\nn}{\nonumber}
+\newcommand{\simlt}{\lower.5ex\hbox{$\; \buildrel < \over \sim \;$}}
+\newcommand{\simgt}{\lower.8ex\hbox{$\; \buildrel > \over \sim \;$}}
+\newcommand{\resizeall}{\center\resizebox{0.8\textwidth}{!}}
+\def\comred#1{\com{ [\textcolor{red}{#1}]}}
+
+\def\replacegraphics#1{
+ \begin{overpic}{#1}
+% \put(100,130){\Huge\bf To Be Replaced}
+ \put(100,130){\Huge\bf Dummy plot}
+\end{overpic}
+}
+
+\def\preliminarygraphics#1{
+ \begin{overpic}{#1}
+% \put(100,130){\Huge\bf To Be Replaced}
+ \put(100,130){\Huge\bf Preliminary}
+\end{overpic}
+}
+
+\def\dfrac{\displaystyle\frac}
+\def\sss{\scriptscriptstyle}
+\def\l{\left}
+\def\r{\right}
+\def\gsim{~{\rlap{\lower 3.5pt\hbox{$\mathchar\sim$}}\raise 1pt\hbox{$>$}}\,}
+\def\lsim{~{\rlap{\lower 3.5pt\hbox{$\mathchar\sim$}}\raise 1pt\hbox{$<$}}\,}
+\def\numt#1#2{#1 \times 10^{#2}}
+\def\etal{{\it et al.}}
+\def\ra{\rightarrow}
+
+%%% local definitions %%%
+
+% Coments on/off %
+%\excomment{com}
+\incomment{com}
+
+%% Title, authors and addresses
+\preprint{KEK-TH-}
+\title{Title}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\centering
+\author[a]{Kaoru Hagiwara\footnote{kaoru.hagiwara@kek.jp}}
+\author[b]{and Yoshitaro
+Takaesu\footnote{takaesu@hep-th.phys.s.u-tokyo.ac.jp}}
+
+\affiliation[a]{Theory Center, KEK, 1-1 Oho, Tuskuba, Ibaraki 305-0801, Japan}
+\affiliation[b]{Department of Physics, University of Tokyo, Tokyo
+113-0033, Japan}
+
+\abstract{
+abstract...
+ }
+
+\begin{document}
+
+\maketitle
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+\renewcommand{\include}[1]{}
+\renewcommand\documentclass[2][]{}
+
+\section{Introduction}
+\label{intro}
+Introduction...
+
+
+\section{Section 1}
+\label{sec:1}
+In this section, ...
+
+\subsection{Subsection 1}
+\label{sec:subsec1}
+Subsection 
+
+\section{Summary and conclusion}
+\label{sec:conclusion}
+In this paper, ...
+
+
+\vspace{2em}
+\noindent {\bf Acknowledgment}
+\vspace{1em}
+
+\noindent
+We would like to thank ...
+
+
+%\clearpage
+\vspace{2em}
+\appendix
+\setcounter{equation}{0}
+
+\noindent \textbf{\Large Appendix}
+
+\section{AppendixA}
+\label{sec:appA}
+Appendix
+
+
+\bibliographystyle{biblio/general}
+\bibliography{biblio/reference}
+
+\end{document}
+

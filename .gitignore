@@ -1,0 +1,8 @@
+*.aux
+*.bbl
+*.dvi
+*.log
+*.pdf
+bib2
+*.tar.gz
+diff.*
